@@ -10,7 +10,10 @@ namespace Silnia_rek
     {
         private static int Silnia (int c)
         {
-            if (c == 1)
+
+            return c == 0 ? 1 : c * Silnia(c-1);
+            /*
+            if (c == 0)
             {
                 return 1;
             }
@@ -18,6 +21,7 @@ namespace Silnia_rek
             {
                 return c* Silnia(c - 1);
             }
+            */
         }
         static void Main(string[] args)
         {
